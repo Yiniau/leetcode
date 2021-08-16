@@ -40,15 +40,38 @@ pub struct Solution {}
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+// the key of solution is how to decide change current value or another value
 impl Solution {
     pub fn check_possibility(nums: Vec<i32>) -> bool {
-        let mut count = 0;
+        let mut count = 1;
+        let mut nums = nums;
+        let length = nums.len();
 
-        for num in nums[0..nums.len() - 2].into_iter() {
-            if ()
+        if length <= 2 {
+            return true;
         }
 
-        count < 2
+        if nums[0] > nums[1] {
+            nums[0] = nums[1];
+            count -= 1;
+        }
+
+        // for (i, num) in nums[0..length - 2].iter_mut().enumerate() {
+        for i in 2..length {
+            if count < 0 {
+                break;
+            }
+            if nums[i - 1] > nums[i] {
+                count -= 1;
+                if nums[i - 2] > nums[i] {
+                    nums[i] = nums[i - 1];
+                } else {
+                    nums[i - 1] = nums[i];
+                }
+            }
+        }
+
+        count >= 0
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
@@ -68,9 +91,19 @@ mod tests {
         // test code here
         assert_eq!(Solution::check_possibility(vec![4,2,1]), false);
     }
-    // #[test]
-    // fn test_3() {
-    //     // test code here
-    //     assert_eq!(Solution::check_possibility(vec![4,2,1]), false);
-    // }
+    #[test]
+    fn test_3() {
+        // test code here
+        assert_eq!(Solution::check_possibility(vec![3,4,2,3]), false);
+    }
+    #[test]
+    fn test_4() {
+        // test code here
+        assert_eq!(Solution::check_possibility(vec![2,3,3,2,2]), false);
+    }
+    #[test]
+    fn test_5() {
+        // test code here
+        assert_eq!(Solution::check_possibility(vec![5,7,1,8]), true);
+    }
 }
