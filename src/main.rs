@@ -6,6 +6,8 @@ mod best_time_to_buy_and_sell_stock_ii;
 mod queue_reconstruction_by_height;
 #[path = "./leetcode/editor/en/[665]non_decreasing_array.rs"]
 mod non_decreasing_array;
+#[path = "./leetcode/editor/en/[763]partition_labels.rs"]
+mod partition_labels;
 
 fn main() {}
 
