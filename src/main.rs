@@ -8,6 +8,8 @@ mod queue_reconstruction_by_height;
 mod non_decreasing_array;
 #[path = "./leetcode/editor/en/[763]partition_labels.rs"]
 mod partition_labels;
+#[path = "./leetcode/editor/en/[88]merge_sorted_array.rs"]
+mod merge_sorted_array;
 
 fn main() {}
 

@@ -59,6 +59,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[88]merge_sorted_array.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[88]merge_sorted_array.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[88]merge_sorted_array.rs" />
+              <option name="questionId" value="88" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/7v/c_3825g53w957y32whkcxqgm0000gn/T/leetcode/editor/en/[435]Non-overlapping Intervals.rs">
           <value>
             <LeetcodeEditor>
