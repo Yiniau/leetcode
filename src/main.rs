@@ -12,6 +12,8 @@ mod partition_labels;
 mod merge_sorted_array;
 #[path = "./leetcode/editor/en/[76]minimum_window_substring.rs"]
 mod minimum_window_substring;
+#[path = "./leetcode/editor/en/[633]sum_of_square_numbers.rs"]
+mod sum_of_square_numbers;
 
 fn main() {}
 

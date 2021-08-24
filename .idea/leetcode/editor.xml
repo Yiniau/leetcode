@@ -43,6 +43,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[633]_sum_of_square_numbers.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[633]_sum_of_square_numbers.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[633]_sum_of_square_numbers.rs" />
+              <option name="questionId" value="633" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[665]non_decreasing_array.rs">
           <value>
             <LeetcodeEditor>
@@ -73,6 +82,15 @@
             <LeetcodeEditor>
               <option name="path" value="/var/folders/7v/c_3825g53w957y32whkcxqgm0000gn/T/leetcode/editor/en/[435]Non-overlapping Intervals.rs" />
               <option name="questionId" value="435" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/97/xb01j2qx2w39xdmzwg0qgszr0000gp/T/leetcode/editor/en/[633]_sum_of_square_numbers.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[633]_sum_of_square_numbers.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[633]_sum_of_square_numbers.rs" />
+              <option name="questionId" value="633" />
             </LeetcodeEditor>
           </value>
         </entry>
