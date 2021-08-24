@@ -28,7 +28,7 @@ impl Solution {
         let mut l: usize = 0;
         let mut min_l: usize = 0;
 
-        let mut size: usize = origin_str_bytes.len();
+        let mut size: usize = origin_str_bytes.len() + 1;
 
         for (r, c) in origin_str_bytes.iter().enumerate() {
             // 1. make window contain all char in target string
@@ -40,9 +40,10 @@ impl Solution {
             });
 
             // 2. *try* move left point to right to get minimum window size
-            while count >= need_count {
+            while count == need_count {
                 // only apply changes when the situation meets the requirements of the problem
-                if l > min_l {
+                // if l > min_l { // If you use l as a condition, you will miss the update when s is equal to t
+                if r - l + 1 < size {
                     min_l = l;
                     size = r - l + 1;
                 }
@@ -56,7 +57,9 @@ impl Solution {
                 l += 1; // must after minus target char touch count logic
             }
         }
-
+		if size > origin_str_bytes.len() {
+			return String::new();
+		}
         String::from_utf8(origin_str_bytes[min_l..min_l + size].to_vec()).unwrap()
     }
 }
@@ -71,5 +74,23 @@ mod tests {
     fn test_1() {
         let ret = Solution::min_window(String::from("ADOBECODEBANC"), String::from("ABC"));
         assert_eq!(ret, String::from("BANC"));
+    }
+
+    #[test]
+    fn test_2() {
+        let ret = Solution::min_window(String::from("a"), String::from("aa"));
+        assert_eq!(ret, String::from(""));
+    }
+
+    #[test]
+    fn test_3() {
+        let ret = Solution::min_window(String::from("a"), String::from("b"));
+        assert_eq!(ret, String::from(""));
+    }
+
+    #[test]
+    fn test_4() {
+        let ret = Solution::min_window(String::from("a"), String::from("a"));
+        assert_eq!(ret, String::from("a"));
     }
 }

@@ -10,6 +10,8 @@ mod non_decreasing_array;
 mod partition_labels;
 #[path = "./leetcode/editor/en/[88]merge_sorted_array.rs"]
 mod merge_sorted_array;
+#[path = "./leetcode/editor/en/[76]minimum_window_substring.rs"]
+mod minimum_window_substring;
 
 fn main() {}
 
