@@ -14,15 +14,16 @@ impl Solution {
             return true;
         }
         let mut l: i32 = 0;
-        let mut l_powed = l.pow(2);
-        while c - l_powed > 0 {
-            let r_powed = c - l_powed;
-            let r = (r_powed as f64).sqrt();
-            if r.is_nan() || r.fract() != 0.0 {
-                l += 1;
-                l_powed = l.pow(2);
-            } else {
+        let mut r = (c as f64).sqrt() as i32;
+        while r >= l {
+            let t = l.pow(2) + r.pow(2);
+            if c == t {
                 return true;
+            }
+            if t > c {
+                r -= 1;
+            } else {
+                l += 1;
             }
         }
         false
