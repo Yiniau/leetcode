@@ -14,6 +14,8 @@ mod merge_sorted_array;
 mod minimum_window_substring;
 #[path = "./leetcode/editor/en/[633]sum_of_square_numbers.rs"]
 mod sum_of_square_numbers;
+#[path = "./leetcode/editor/en/[680]valid_palindrome_ii.rs"]
+mod valid_palindrome_ii;
 
 fn main() {}
 
