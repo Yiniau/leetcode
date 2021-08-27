@@ -16,6 +16,8 @@ mod minimum_window_substring;
 mod sum_of_square_numbers;
 #[path = "./leetcode/editor/en/[680]valid_palindrome_ii.rs"]
 mod valid_palindrome_ii;
+#[path = "./leetcode/editor/en/[524]_longest_word_in_dictionary_through_deleting.rs"]
+mod longest_word_in_dictionary_through_deleting;
 
 fn main() {}
 
