@@ -18,6 +18,8 @@ mod sum_of_square_numbers;
 mod valid_palindrome_ii;
 #[path = "./leetcode/editor/en/[524]_longest_word_in_dictionary_through_deleting.rs"]
 mod longest_word_in_dictionary_through_deleting;
+#[path = "leetcode/editor/en/[340]longest_substring_with_at_most_k_distinct.rs"]
+mod longest_substring_with_at_most_k_distinct;
 
 fn main() {}
 
