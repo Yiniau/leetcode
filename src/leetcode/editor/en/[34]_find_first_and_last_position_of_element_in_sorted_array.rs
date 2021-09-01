@@ -37,13 +37,13 @@ use std::cmp::Ordering;
 impl Solution {
     pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let p_l = lower_bound(&nums, target);
-        let p_r = upper_bound(&nums, target); // need to minus 1
+        let p_r = upper_bound(&nums, target);
 
         if p_l == nums.len() || nums[p_l] != target {
             return vec![-1,-1];
         }
 
-        vec![p_l as i32, p_r as i32 - 1]
+        vec![p_l as i32, p_r as i32 - 1] // need to minus 1
     }
 }
 // return the first target item in vector
