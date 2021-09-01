@@ -20,6 +20,10 @@ mod valid_palindrome_ii;
 mod longest_word_in_dictionary_through_deleting;
 #[path = "leetcode/editor/en/[340]longest_substring_with_at_most_k_distinct.rs"]
 mod longest_substring_with_at_most_k_distinct;
+#[path = "leetcode/editor/en/[69]_sqrt(x).rs"]
+mod _sqrt;
+#[path = "leetcode/editor/en/[34]_find_first_and_last_position_of_element_in_sorted_array.rs"]
+mod _find_first_and_last_position_of_element_in_sorted_array;
 
 fn main() {}
 

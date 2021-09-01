@@ -19,6 +19,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[34]_find_first_and_last_position_of_element_in_sorted_array.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[34]_find_first_and_last_position_of_element_in_sorted_array.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[34]_find_first_and_last_position_of_element_in_sorted_array.rs" />
+              <option name="questionId" value="34" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[406]queue_reconstruction_by_height.rs">
           <value>
             <LeetcodeEditor>
@@ -66,6 +75,15 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[665]non_decreasing_array.rs" />
               <option name="questionId" value="665" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[69]_sqrt(x).rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[69]_sqrt(x).md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[69]_sqrt(x).rs" />
+              <option name="questionId" value="69" />
             </LeetcodeEditor>
           </value>
         </entry>
