@@ -33,7 +33,6 @@ pub struct Solution {}
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-use std::cmp::Ordering;
 impl Solution {
     pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let p_l = lower_bound(&nums, target);

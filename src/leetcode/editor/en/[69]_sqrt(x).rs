@@ -41,7 +41,7 @@ impl Solution {
         let x = x as u64;
         let mut nx = x;
         while nx * nx > x  {
-            nx = ((nx + (x / nx)) / 2);
+            nx = (nx + (x / nx)) / 2;
         }
         nx as i32
     }

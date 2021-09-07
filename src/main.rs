@@ -24,6 +24,8 @@ mod longest_substring_with_at_most_k_distinct;
 mod _sqrt;
 #[path = "leetcode/editor/en/[34]_find_first_and_last_position_of_element_in_sorted_array.rs"]
 mod _find_first_and_last_position_of_element_in_sorted_array;
+#[path = "leetcode/editor/en/[81]_search_in_rotated_sorted_array_i_i.rs"]
+mod _search_in_rotated_sorted_array_i_i;
 
 fn main() {}
 

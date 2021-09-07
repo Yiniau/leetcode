@@ -95,6 +95,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[81]_search_in_rotated_sorted_array_i_i.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[81]_search_in_rotated_sorted_array_i_i.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[81]_search_in_rotated_sorted_array_i_i.rs" />
+              <option name="questionId" value="81" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[88]merge_sorted_array.rs">
           <value>
             <LeetcodeEditor>
