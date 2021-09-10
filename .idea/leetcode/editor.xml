@@ -11,6 +11,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[154]_find_minimum_in_rotated_sorted_array_i_i.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[154]_find_minimum_in_rotated_sorted_array_i_i.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[154]_find_minimum_in_rotated_sorted_array_i_i.rs" />
+              <option name="questionId" value="154" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[196]delete_duplicate_emails.rs">
           <value>
             <LeetcodeEditor>
