@@ -28,5 +28,7 @@ mod _find_first_and_last_position_of_element_in_sorted_array;
 mod _search_in_rotated_sorted_array_i_i;
 #[path = "./leetcode/editor/en/[154]_find_minimum_in_rotated_sorted_array_i_i.rs"]
 mod _find_minimum_in_rotated_sorted_array_i_i;
+#[path = "./leetcode/editor/en/[540]_single_element_in_a_sorted_array.rs"]
+mod _single_element_in_a_sorted_array;
 
 fn main() {}
