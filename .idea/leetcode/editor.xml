@@ -61,6 +61,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[4]median_of_two_sorted_arrays.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[4]median_of_two_sorted_arrays.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[4]median_of_two_sorted_arrays.rs" />
+              <option name="questionId" value="4" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[524]_longest_word_in_dictionary_through_deleting.rs">
           <value>
             <LeetcodeEditor>
