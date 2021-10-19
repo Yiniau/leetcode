@@ -171,8 +171,8 @@ impl Solution {
 
             if (j == 0 || i == m || (b[j - 1] <= a[i])) && (i == 0 || j == n || (a[i - 1] <= b[j])) {
                 // 2.<a>
-                let mut max_left_part: i32;
-                let mut min_right_part: i32;
+                let max_left_part: i32;
+                let min_right_part: i32;
 
                 if i == 0 {
                     max_left_part = b[j - 1];
@@ -242,7 +242,7 @@ mod tests {
 
     #[test]
     fn test_4() {
-        let ret = Solution::find_median_sorted_arrays(vec![2], vec![1]);
-        assert_eq!(ret, 1.5000);
+        let ret = Solution::find_median_sorted_arrays(vec![2], vec![]);
+        assert_eq!(ret, 2.0000);
     }
 }
