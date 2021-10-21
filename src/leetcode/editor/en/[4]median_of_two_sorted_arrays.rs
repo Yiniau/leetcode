@@ -124,50 +124,50 @@ impl Solution {
             let mut i = (imin + imax) / 2;
             let mut j = (m + n + 1) / 2 - i;
 
-            /// 2 Now we have len(left_part)==len(right_part). And there are only 3 situations
-            ///      that we may encounter:
-            ///     <a> b[j-1] <= a[i] and a[i-1] <= b[j]
-            ///         Means we have found the object `i`, so stop searching.
-            ///     <b> b[j-1] > a[i]
-            ///         Means a[i] is too small. We must `ajust` i to get `b[j-1] <= a[i]`.
-            ///         Can we `increase` i?
-            ///             Yes. Because when i is increased, j will be decreased.
-            ///             So b[j-1] is decreased and a[i] is increased, and `b[j-1] <= a[i]` may
-            ///             be satisfied.
-            ///         Can we `decrease` i?
-            ///             `No!` Because when i is decreased, j will be increased.
-            ///             So b[j-1] is increased and a[i] is decreased, and b[j-1] <= a[i] will
-            ///             be never satisfied.
-            ///         So we must `increase` i. That is, we must ajust the searching range to
-            ///         [i+1, imax]. So, set imin = i+1, and goto <2>.
-            ///     <c> a[i-1] > b[j]
-            ///         Means a[i-1] is too big. And we must `decrease` i to get `a[i-1]<=b[j]`.
-            ///         That is, we must ajust the searching range to [imin, i-1].
-            ///         So, set imax = i-1, and goto <2>.
-            ///
-            /// Now let's consider the edges values i=0,i=m,j=0,j=n where a[i-1],b[j-1],a[i],b[j]
-            /// What we need to do is ensuring that max(left_part) <= min(right_part).
-            /// So, if i and j are not edges values(means a[i-1],b[j-1],a[i],b[j] all exist),
-            /// then we must check both b[j-1] <= a[i] and a[i-1] <= b[j].
-            /// But if some of a[i-1],b[j-1],a[i],b[j] don't exist,
-            /// then we don't need to check one(or both) of these two conditions.
-            /// For example, if i=0, then a[i-1] doesn't exist, then we don't need to check a[i-1] <= b[j].
-            /// So, what we need to do is:
-            /// Searching i in [0, m], to find an object `i` that:
-            ///     (j == 0 or i == m or b[j-1] <= a[i]) and
-            ///     (i == 0 or j == n or a[i-1] <= b[j])
-            ///     where j = (m + n + 1)/2 - i
-            ///
-            /// And in a searching loop, we will encounter only three situations:
-            /// <a> (j == 0 or i == m or b[j-1] <= a[i]) and
-            ///     (i == 0 or j = n or a[i-1] <= b[j])
-            ///     Means i is perfect, we can stop searching.
-            ///
-            /// <b> j > 0 and i < m and b[j - 1] > a[i]
-            ///     Means i is too small, we must increase it.
-            ///
-            /// <c> i > 0 and j < n and a[i - 1] > b[j]
-            ///     Means i is too big, we must decrease it.
+            // 2 Now we have len(left_part)==len(right_part). And there are only 3 situations
+            //      that we may encounter:
+            //     <a> b[j-1] <= a[i] and a[i-1] <= b[j]
+            //         Means we have found the object `i`, so stop searching.
+            //     <b> b[j-1] > a[i]
+            //         Means a[i] is too small. We must `ajust` i to get `b[j-1] <= a[i]`.
+            //         Can we `increase` i?
+            //             Yes. Because when i is increased, j will be decreased.
+            //             So b[j-1] is decreased and a[i] is increased, and `b[j-1] <= a[i]` may
+            //             be satisfied.
+            //         Can we `decrease` i?
+            //             `No!` Because when i is decreased, j will be increased.
+            //             So b[j-1] is increased and a[i] is decreased, and b[j-1] <= a[i] will
+            //             be never satisfied.
+            //         So we must `increase` i. That is, we must ajust the searching range to
+            //         [i+1, imax]. So, set imin = i+1, and goto <2>.
+            //     <c> a[i-1] > b[j]
+            //         Means a[i-1] is too big. And we must `decrease` i to get `a[i-1]<=b[j]`.
+            //         That is, we must ajust the searching range to [imin, i-1].
+            //         So, set imax = i-1, and goto <2>.
+            //
+            // Now let's consider the edges values i=0,i=m,j=0,j=n where a[i-1],b[j-1],a[i],b[j]
+            // What we need to do is ensuring that max(left_part) <= min(right_part).
+            // So, if i and j are not edges values(means a[i-1],b[j-1],a[i],b[j] all exist),
+            // then we must check both b[j-1] <= a[i] and a[i-1] <= b[j].
+            // But if some of a[i-1],b[j-1],a[i],b[j] don't exist,
+            // then we don't need to check one(or both) of these two conditions.
+            // For example, if i=0, then a[i-1] doesn't exist, then we don't need to check a[i-1] <= b[j].
+            // So, what we need to do is:
+            // Searching i in [0, m], to find an object `i` that:
+            //     (j == 0 or i == m or b[j-1] <= a[i]) and
+            //     (i == 0 or j == n or a[i-1] <= b[j])
+            //     where j = (m + n + 1)/2 - i
+            //
+            // And in a searching loop, we will encounter only three situations:
+            // <a> (j == 0 or i == m or b[j-1] <= a[i]) and
+            //     (i == 0 or j = n or a[i-1] <= b[j])
+            //     Means i is perfect, we can stop searching.
+            //
+            // <b> j > 0 and i < m and b[j - 1] > a[i]
+            //     Means i is too small, we must increase it.
+            //
+            // <c> i > 0 and j < n and a[i - 1] > b[j]
+            //     Means i is too big, we must decrease it.
 
             if (j == 0 || i == m || (b[j - 1] <= a[i])) && (i == 0 || j == n || (a[i - 1] <= b[j])) {
                 // 2.<a>

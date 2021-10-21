@@ -32,5 +32,7 @@ mod _find_minimum_in_rotated_sorted_array_i_i;
 mod _single_element_in_a_sorted_array;
 #[path = "./leetcode/editor/en/[4]median_of_two_sorted_arrays.rs"]
 mod median_of_two_sorted_arrays;
+#[path = "./leetcode/editor/en/[_]common_sort.rs"]
+mod common_sort;
 
 fn main() {}
