@@ -84,7 +84,7 @@ mod tests {
     }
 
     #[test]
-    fn mergin_sort_test() {
+    fn merge_sort_test() {
         let mut arr = vec![6, 1, 4, 5, 2];
         let mut temp = arr.clone();
         let len = arr.len();
