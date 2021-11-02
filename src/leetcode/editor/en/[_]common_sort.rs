@@ -27,7 +27,7 @@ impl Sort {
         Sort::quick_sort(arr, l + 1, end);
     }
 
-    pub fn mergin_sort(arr: &mut Vec<i32>, l: usize, r: usize, temp: &mut Vec<i32>) {
+    pub fn merge_sort(arr: &mut Vec<i32>, l: usize, r: usize, temp: &mut Vec<i32>) {
         if l + 1 >= r {
             // => 1 >= r - l
             // => r - l <= 1
@@ -88,7 +88,7 @@ mod tests {
         let mut arr = vec![6, 1, 4, 5, 2];
         let mut temp = arr.clone();
         let len = arr.len();
-        Sort::mergin_sort(&mut arr, 0, len, &mut temp);
+        Sort::merge_sort(&mut arr, 0, len, &mut temp);
         println!("{:?}", &arr);
         assert_eq!(arr[0], 1);
         assert_eq!(arr[1], 2);
