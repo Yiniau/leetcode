@@ -121,8 +121,9 @@ impl Solution {
         let mut imin = 0;
         let mut imax = m;
         while imin <= imax {
-            let mut i = (imin + imax) / 2;
-            let mut j = (m + n + 1) / 2 - i;
+            let i = (imin + imax) / 2;
+            let j = (m + n + 1) / 2 - i;
+            // i + j = (m+n+1)/2 = half of the total
 
             // 2 Now we have len(left_part)==len(right_part). And there are only 3 situations
             //      that we may encounter:

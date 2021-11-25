@@ -14,8 +14,8 @@ impl Sort {
             while l < r && arr[r] >= pivot {
                 r -= 1;
             }
-            // catch an item which &le pivot, should move to left of pivot
-            arr[l] = arr[r]; // replace place of l and r
+            // catch an item which &ge pivot, should move to left of pivot
+            arr[l] = arr[r]; // swap of l and r
                              // scan left
             while l < r && arr[l] <= pivot {
                 l += 1;
@@ -40,8 +40,8 @@ impl Sort {
         // => l + r - 1 > 2l
         // => m > l
         let m = l + (r - l) / 2; // divide
-        Sort::mergin_sort(arr, l, m, temp);
-        Sort::mergin_sort(arr, m, r, temp);
+        Self::merge_sort(arr, l, m, temp);
+        Self::merge_sort(arr, m, r, temp);
         // we can sure [l..m).len() <= 1 and [m..r).len() <= 1;
         // Only starting from a single element can make sure the orderliness of both sides of array to be merged
 
@@ -64,6 +64,23 @@ impl Sort {
             arr[t] = temp[t];
         }
         // temp.clear();
+    }
+
+    pub fn bubble_sort(nums: &mut Vec<i32>, n: usize) {
+        let mut swapped = false;
+        // every turn, the largest item will be moved to array end
+        for i in 1..n {
+            swapped = false;
+            for j in 1..(n - i + 1) {
+                if nums[j] < nums[j - 1] {
+                    nums.swap(j, j-1);
+                    swapped = true;
+                }
+            }
+            if !swapped {
+                break;
+            }
+        }
     }
 }
 
@@ -95,5 +112,29 @@ mod tests {
         assert_eq!(arr[2], 4);
         assert_eq!(arr[3], 5);
         assert_eq!(arr[4], 6);
+    }
+
+    #[test]
+    fn bubble_sort_test() {
+        let mut arr = vec![6, 1, 4, 5, 2];
+        let len = arr.len();
+        Sort::bubble_sort(&mut arr, len);
+        println!("{:?}", &arr);
+        assert_eq!(arr[0], 1);
+        assert_eq!(arr[1], 2);
+        assert_eq!(arr[2], 4);
+        assert_eq!(arr[3], 5);
+        assert_eq!(arr[4], 6);
+
+        let mut arr2 = vec![6, 5, 4, 3, 2, 1];
+        let len2 = arr2.len();
+        Sort::bubble_sort(&mut arr2, len2);
+        println!("{:?}", &arr2);
+        assert_eq!(arr2[0], 1);
+        assert_eq!(arr2[1], 2);
+        assert_eq!(arr2[2], 3);
+        assert_eq!(arr2[3], 4);
+        assert_eq!(arr2[4], 5);
+        assert_eq!(arr2[5], 6);
     }
 }

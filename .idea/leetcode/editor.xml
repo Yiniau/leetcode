@@ -28,6 +28,24 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[215]_kth_largest_element_in_an_array.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[215]_kth_largest_element_in_an_array.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[215]_kth_largest_element_in_an_array.rs" />
+              <option name="questionId" value="215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[347]_top_k_frequent_elements.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[347]_top_k_frequent_elements.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[347]_top_k_frequent_elements.rs" />
+              <option name="questionId" value="347" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[34]_find_first_and_last_position_of_element_in_sorted_array.rs">
           <value>
             <LeetcodeEditor>

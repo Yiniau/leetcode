@@ -34,5 +34,9 @@ mod _single_element_in_a_sorted_array;
 mod median_of_two_sorted_arrays;
 #[path = "./leetcode/editor/en/[_]common_sort.rs"]
 mod common_sort;
+#[path = "./leetcode/editor/en/[215]_kth_largest_element_in_an_array.rs"]
+mod _kth_largest_element_in_an_array;
+#[path = "./leetcode/editor/en/[347]_top_k_frequent_elements.rs"]
+mod _top_k_frequent_elements;
 
 fn main() {}

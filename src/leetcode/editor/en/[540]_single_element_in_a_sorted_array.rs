@@ -1,5 +1,3 @@
-use std::cmp::min;
-
 //noinspection ALL
 #[allow(dead_code)]
 pub struct Solution {}
