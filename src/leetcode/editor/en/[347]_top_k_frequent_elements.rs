@@ -30,7 +30,35 @@ pub struct Solution {}
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-use std::collections::HashMap;
+use std::cmp::Ordering;
+use std::collections::{BinaryHeap, HashMap};
+use std::iter::FromIterator;
+
+#[derive(Eq)]
+struct Node(i32, i32);
+
+impl PartialEq for Node {
+    fn eq(&self, other: &Self) -> bool {
+        let Node(_, t1) = self;
+        let Node(_, t2) = other;
+        t1 == t2
+    }
+}
+
+impl PartialOrd<Self> for Node {
+    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+        Some(self.cmp(other))
+    }
+}
+
+impl Ord for Node {
+    fn cmp(&self, other: &Self) -> Ordering {
+        let Node(_, t1) = self;
+        let Node(_, t2) = other;
+        t1.cmp(t2)
+    }
+}
+
 impl Solution {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let mut map = HashMap::new();
@@ -39,13 +67,15 @@ impl Solution {
             *t += 1;
         }
 
-        let mut group: Vec<[i32;2]> = map.into_iter()
-            .map(|(key, value)| [key, value])
-            .collect();
+        let mut heap = BinaryHeap::from_iter(map.into_iter().map(|t| Node(t.0, t.1)));
 
-        group.sort_by(|a, b| b[1].cmp(&a[1]));
-
-        group[0..k as usize].iter().map(|t| t[0]).collect()
+        let mut group = Vec::with_capacity(k as usize);
+        for _ in 0..k {
+            if let Some(Node(key, _)) = heap.pop() {
+                group.push(key);
+            }
+        }
+        group
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
