@@ -79,6 +79,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[451]_sort_characters_by_frequency.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[451]_sort_characters_by_frequency.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[451]_sort_characters_by_frequency.rs" />
+              <option name="questionId" value="451" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[4]_median_of_two_sorted_arrays.rs">
           <value>
             <LeetcodeEditor>

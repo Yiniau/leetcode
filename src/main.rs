@@ -38,5 +38,7 @@ mod common_sort;
 mod _kth_largest_element_in_an_array;
 #[path = "./leetcode/editor/en/[347]_top_k_frequent_elements.rs"]
 mod _top_k_frequent_elements;
+#[path = "./leetcode/editor/en/[451]_sort_characters_by_frequency.rs"]
+mod _sort_characters_by_frequency;
 
 fn main() {}
