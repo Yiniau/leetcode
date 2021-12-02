@@ -150,6 +150,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[75]_sort_colors.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[75]_sort_colors.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[75]_sort_colors.rs" />
+              <option name="questionId" value="75" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[763]partition_labels.rs">
           <value>
             <LeetcodeEditor>

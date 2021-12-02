@@ -40,5 +40,7 @@ mod _kth_largest_element_in_an_array;
 mod _top_k_frequent_elements;
 #[path = "./leetcode/editor/en/[451]_sort_characters_by_frequency.rs"]
 mod _sort_characters_by_frequency;
+#[path = "./leetcode/editor/en/[75]_sort_colors.rs"]
+mod _sort_colors;
 
 fn main() {}

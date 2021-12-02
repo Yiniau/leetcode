@@ -108,7 +108,7 @@ mod tests {
         let ret = Solution::frequency_sort(String::from("tree"));
         assert!(ret == String::from("eert") || ret == String::from("eetr"));
     }
-11
+
     #[test]
     fn test_2() {
         let ret = Solution::frequency_sort(String::from("Aabb"));
