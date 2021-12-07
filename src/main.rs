@@ -42,5 +42,7 @@ mod _top_k_frequent_elements;
 mod _sort_characters_by_frequency;
 #[path = "./leetcode/editor/en/[75]_sort_colors.rs"]
 mod _sort_colors;
+#[path = "./leetcode/editor/en/[695]_max_area_of_island.rs"]
+mod _max_area_of_island;
 
 fn main() {}

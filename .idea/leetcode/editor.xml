@@ -141,6 +141,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[695]_max_area_of_island.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[695]_max_area_of_island.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[695]_max_area_of_island.rs" />
+              <option name="questionId" value="695" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[69]_sqrt(x).rs">
           <value>
             <LeetcodeEditor>
