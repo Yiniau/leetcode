@@ -124,6 +124,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[547]_number_of_provinces.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[547]_number_of_provinces.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[547]_number_of_provinces.rs" />
+              <option name="questionId" value="547" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[633]_sum_of_square_numbers.rs">
           <value>
             <LeetcodeEditor>

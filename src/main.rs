@@ -44,5 +44,7 @@ mod _sort_characters_by_frequency;
 mod _sort_colors;
 #[path = "./leetcode/editor/en/[695]_max_area_of_island.rs"]
 mod _max_area_of_island;
+#[path = "./leetcode/editor/en/[547]_number_of_provinces.rs"]
+mod _number_of_provinces;
 
 fn main() {}
