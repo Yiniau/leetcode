@@ -49,9 +49,50 @@ pub struct Solution {}
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+const DIRECTION: [i32; 5] = [-1, 0, 1, 0, -1];
+
 impl Solution {
     pub fn pacific_atlantic(heights: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        
+        let row_length = heights.len();
+        let column_length = heights[0].len();
+
+        let mut p: Vec<Vec<i32>> = vec![vec![0; column_length]; row_length];
+        let mut a: Vec<Vec<i32>> = vec![vec![0; column_length]; row_length];
+
+        for i in 0..column_length {
+            Self::dfs(&heights, &mut p, 0, i);
+            Self::dfs(&heights, &mut a, (row_length - 1), i);
+        }
+        for i in 0..row_length {
+            Self::dfs(&heights, &mut p, i, 0);
+            Self::dfs(&heights, &mut a, i, (column_length - 1));
+        }
+
+        let mut ret = vec![];
+        for r in 0..row_length {
+            for c in 0..column_length {
+                if p[r][c] == 1 && a[r][c] == 1 && p[r][c] == a[r][c] {
+                    ret.push(vec![r as i32, c as i32]);
+                }
+            }
+        }
+        ret
+    }
+
+    fn dfs(heights: &Vec<Vec<i32>>, visited: &mut Vec<Vec<i32>>, r: usize, c: usize) {
+        if visited[r][c] == 1 {
+            return;
+        }
+        visited[r][c] = 1;
+        for i in 0..4 {
+            let nr = r as i32 + DIRECTION[i];
+            let nc = c as i32 + DIRECTION[i + 1];
+            if nr < heights.len() as i32 && nr >= 0 && nc < heights[0].len() as i32 && nc >= 0 {
+                if heights[nr as usize][nc as usize] >= heights[r][c] {
+                    Self::dfs(heights, visited, nr as usize, nc as usize);
+                }
+            }
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
@@ -64,7 +105,21 @@ mod tests {
     #[test]
     fn test_1() {
         // test code here
-        let ret = Solution::
-        assert_eq!(ret, true);
+        let ret = Solution::pacific_atlantic(vec![
+            vec![1, 2, 2, 3, 5],
+            vec![3, 2, 3, 4, 4],
+            vec![2, 4, 5, 3, 1],
+            vec![6, 7, 1, 4, 5],
+            vec![5, 1, 1, 2, 4],
+        ]);
+        assert_eq!(ret, vec![
+            vec![0, 4],
+            vec![1, 3],
+            vec![1, 4],
+            vec![2, 2],
+            vec![3, 0],
+            vec![3, 1],
+            vec![4, 0],
+        ]);
     }
 }

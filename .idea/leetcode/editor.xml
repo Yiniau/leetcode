@@ -63,6 +63,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[417]_pacific_atlantic_water_flow.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[417]_pacific_atlantic_water_flow.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[417]_pacific_atlantic_water_flow.rs" />
+              <option name="questionId" value="417" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[435]nonOverlappingIntervals.rs">
           <value>
             <LeetcodeEditor>
