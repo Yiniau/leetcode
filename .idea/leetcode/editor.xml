@@ -97,6 +97,24 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[46]_permutations.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[46]_permutations.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[46]_permutations.rs" />
+              <option name="questionId" value="46" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[47]_permutations_i_i.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[47]_permutations_i_i.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[47]_permutations_i_i.rs" />
+              <option name="questionId" value="47" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[4]_median_of_two_sorted_arrays.rs">
           <value>
             <LeetcodeEditor>
