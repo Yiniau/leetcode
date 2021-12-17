@@ -212,6 +212,15 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[77]_combinations.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/en/doc/content/[77]_combinations.md" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/en/[77]_combinations.rs" />
+              <option name="questionId" value="77" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/en/[81]_search_in_rotated_sorted_array_i_i.rs">
           <value>
             <LeetcodeEditor>

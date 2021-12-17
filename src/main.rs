@@ -50,7 +50,9 @@
 // mod _pacific_atlantic_water_flow;
 // #[path = "./leetcode/editor/en/[46]_permutations.rs"]
 // mod _permutations;
-#[path = "./leetcode/editor/en/[47]_permutations_i_i.rs"]
-mod _permutations_i_i;
+// #[path = "./leetcode/editor/en/[47]_permutations_i_i.rs"]
+// mod _permutations_i_i;
+#[path = "./leetcode/editor/en/[77]_combinations.rs"]
+mod _combinations;
 
 fn main() {}
